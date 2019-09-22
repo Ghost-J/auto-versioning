@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "output": "auto-versioning.js",
+    "push": "auto-version --push",
     "lint": "eslint **/*.js"
   },
   "keywords": [

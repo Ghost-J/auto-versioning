@@ -39,8 +39,31 @@ if (push) {
 }
 
 const major = (process.argv.indexOf('--major') > -1);
+
+if (major) {
+
+	updatePackageVersion('major');
+
+	console.log('The package.json has been updated to version: ' + packageJSON.version);
+}
+
 const minor = (process.argv.indexOf('--minor') > -1);
+
+if (minor) {
+
+	updatePackageVersion('minor');
+
+	console.log('The package.json has been updated to version: ' + packageJSON.version);
+}
+
 const patch = (process.argv.indexOf('--patch') > -1);
+
+if (patch) {
+
+	updatePackageVersion('patch');
+
+	console.log('The package.json has been updated to version: ' + packageJSON.version);
+}
 
 /**
  * Update the package version in the package.json
