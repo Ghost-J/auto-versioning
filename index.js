@@ -1,0 +1,2 @@
+const packageJson = require('package');
+

@@ -1,0 +1,28 @@
+{
+  "name": "auto-versioning",
+  "version": "1.0.0",
+  "description": "Automatically Update package.json",
+  "bin": {
+    "auto-version": "./bin/auto-versioning.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "output": "auto-versioning.js",
+    "lint": "eslint **/*.js"
+  },
+  "keywords": [
+    "versioning"
+  ],
+  "author": "Dennis Jindrich",
+  "license": "ISC",
+  "engines": {
+    "node": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
